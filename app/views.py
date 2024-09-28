@@ -30,8 +30,8 @@ def PACKAGES(requests):
     return render(requests,'packages.html')
 
 
-def CARRER(requests):
-    return render(requests,'carrer.html')
+def CARRIER(requests):
+    return render(requests,'carrier.html')
 
 
 def TESTIMONIAL(requests):
