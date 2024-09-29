@@ -10,6 +10,8 @@ class hotel(models.Model):
         return self.name
     
 class media(models.Model):
+    name = models.CharField(max_length=100)
+    news_link = models.CharField(max_length=100)
     description = models.CharField(max_length=100)
     image = models.ImageField(upload_to='newsphoto')
 

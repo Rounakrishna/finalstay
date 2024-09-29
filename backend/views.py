@@ -3,12 +3,14 @@ from app import models
 
 
 def HOME(requests):
-    explore = models.exploreproperties.objects.all()
+    properties = models.exploreproperties.objects.all()
     photo = models.ourcommunity.objects.all()
+    media = models.media.objects.all()
 
     data = {
-        'explore':explore,
+        'properties':properties,
         "ourcommunity":photo,
+        "media":media,
     }
 
     return render(requests,'base.html',data)
