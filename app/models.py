@@ -25,7 +25,7 @@ class ourcommunity(models.Model):
 class exploreproperties(models.Model):
     name = models.CharField(max_length=100)
     image = models.ImageField(upload_to='propertyphoto')
-    location = models.CharField(max_length=100)
+    web_link = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
@@ -56,7 +56,7 @@ class package(models.Model):
         return self.name
 
 
-class carrer(models.Model):
+class carrier(models.Model):
     job_name = models.CharField(max_length=100)
     location = models.CharField(max_length=100)
 
