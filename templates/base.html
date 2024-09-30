@@ -358,20 +358,20 @@
                                     </div>
                                 </div>
                             </div>
-                            {% comment %} {% for media in media %} {% endcomment %}
+                            {% for media in media %}
                             <div class="clearfix widget-wrapper wt1imgtop-1tbbot imageDescriptionbottom1 wt-image-text-slider bgColorContainer fullWidthWidget simp-custom-media" data-widget-id="2295880" style="background-color: #fff; ">
                                 <div class="fullWidthWidgetWrapper clearfix">
-                                    <div class="col-xs-12 one-col text-content"><img alt="Web-04" class="img-responsive image-content-29" loading="lazy" src=""
+                                    <div class="col-xs-12 one-col text-content"><img alt="Web-04" class="img-responsive image-content-29" loading="lazy" src="{{media.image.url}}"
                                             style="aspect-ratio: 2812/2812;"/>
                                         <div class="text-content-wrapper">
                                             <p></p>
-                                            <p>name</p><a href="https://hospitality.economictimes.indiatimes.com/news/hotels/my-vision-is-to-make-the-clarks-hotels-resorts-a-leading-global-brand-out-of-india-aryavir-kumar/101030439" target="_blank"><span>My vision is to make The Clarks Hotels &amp; Resorts a leading global brand out of India: Aryavir Kumar</span></a>
+                                            <p>{{media.name}}</p><a href="https://hospitality.economictimes.indiatimes.com/news/hotels/my-vision-is-to-make-the-clarks-hotels-resorts-a-leading-global-brand-out-of-india-aryavir-kumar/101030439" target="_blank"><span>{{media.description}}</span></a>
                                             <p></p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            {% comment %} {% endfor %} {% endcomment %}
+                            {% endfor %}
 
 
                             {% comment %} -------------------------------------about---------------------------------- {% endcomment %}
