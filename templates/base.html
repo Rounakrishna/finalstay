@@ -311,9 +311,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
-
                             <div class="clearfix widget-wrapper wt1tb fullWidthWidget simp-custom-whatmakesUs simp-custom-hide-widget" data-widget-id="2292845" style=" ">
                                 <div class="fullWidthWidgetWrapper clearfix">
                                     <div class="col-xs-12 one-col text-content">
@@ -378,7 +375,8 @@
                             </div>
                             <div class="clearfix widget-wrapper wt1imgtop-1tbbot imageDescriptionbottom1 wt-image-text-slider nonFullWidthWidget simp-custom-home-explore-slider simp-custom-new-slider simp-custom-hide-only-mobile" data-widget-id="2292854"
                                 style=" ">
-                                <div class="col-xs-12 one-col text-content"><img alt="Cover-01" class="img-responsive image-content-29" loading="lazy" src="https://stayblissimages.s3.amazonaws.com/media/first_main.jpeg"
+                                {% for property in properties  %} 
+                                <div class="col-xs-12 one-col text-content"><img alt="Cover-01" class="img-responsive image-content-29" loading="lazy" src="{{property.image.url}}"
                                         style="aspect-ratio: 4998/2812; " />
                                     <div class="text-content-wrapper">
                                         <p></p>
@@ -386,6 +384,7 @@
                                         <p></p>
                                     </div>
                                 </div>
+                                {% endfor %}
                             </div>
 
                             
