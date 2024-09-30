@@ -9,11 +9,14 @@ class hotel(models.Model):
     def __str__(self):
         return self.name
     
-class media(models.Model):
-    name = models.CharField(max_length=100)
+class newsmedia(models.Model):
+    name= models.CharField(max_length=100)
     news_link = models.CharField(max_length=100)
     description = models.CharField(max_length=100)
     image = models.ImageField(upload_to='newsphoto')
+
+    def __str__(self):
+        return self.name
 
     
 class ourcommunity(models.Model):
@@ -36,7 +39,10 @@ class exploreproperties(models.Model):
 class unexplore(models.Model):
     name = models.CharField(max_length=100)
     image = models.ImageField(upload_to='unexplore')
-    location = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name
+
 
 
 class gallery(models.Model):
@@ -73,4 +79,5 @@ class testimonial(models.Model):
     def __str__(self):
         return self.name
     
+
 
