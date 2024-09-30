@@ -159,7 +159,8 @@
                                 </div>
                             </div>
                             <div class="clearfix widget-wrapper wt1imgtop-1tbbot imageDescriptionbottom1 wt-image-text-slider nonFullWidthWidget simp-custom-home-explore-slider" data-widget-id="2292649" style=" ">
-                                <div class="col-xs-12 one-col text-content"><img alt="Clarks Exotica Rajgarh" class="img-responsive image-content-29" loading="lazy" src="https://stayblissimages.s3.amazonaws.com/media/first_main.jpeg"
+                                {% for property in properties  %} 
+                                <div class="col-xs-12 one-col text-content"><img alt="Clarks Exotica Rajgarh" class="img-responsive image-content-29" loading="lazy" src="{{property.image.url}}"
                                         style="aspect-ratio: 1127/634; " />
                                     <div class="text-content-wrapper">
                                         <p></p>
@@ -167,22 +168,8 @@
                                         <p></p>
                                     </div>
                                 </div>
-                                <div class="col-xs-12 one-col text-content"><img alt="SPT Clarks Inn Suites Mandi" class="img-responsive image-content-29" loading="lazy" src="https://stayblissimages.s3.amazonaws.com/media/first_main.jpeg"
-                                        style="aspect-ratio: 1127/634; " />
-                                    <div class="text-content-wrapper">
-                                        <p></p>
-                                        <p><a class="internal-link" data-page-id="846213" href="./clarks-inn-suites-mandi/" target="_self">#internal_link__846213</a></p>
-                                        <p></p>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 one-col text-content"><img alt="Clarks Exotica Ramgarh" class="img-responsive image-content-29" loading="lazy" src="https://stayblissimages.s3.amazonaws.com/media/first_main.jpeg"
-                                        style="aspect-ratio: 1127/634; " />
-                                    <div class="text-content-wrapper">
-                                        <p></p>
-                                        <p><a class="internal-link" data-page-id="815596" href="./clarks-exotica-resort-ramgarh/" target="_self">#internal_link__815596</a></p>
-                                        <p></p>
-                                    </div>
-                                </div>
+                                {% endfor %}
+                               
                             </div>
 
                              {% comment %} -------------------------Explore-unexplore----end-------------- {% endcomment %}
@@ -365,7 +352,7 @@
                                             style="aspect-ratio: 2812/2812;"/>
                                         <div class="text-content-wrapper">
                                             <p></p>
-                                            <p>{{media.name}}</p><a href="https://hospitality.economictimes.indiatimes.com/news/hotels/my-vision-is-to-make-the-clarks-hotels-resorts-a-leading-global-brand-out-of-india-aryavir-kumar/101030439" target="_blank"><span>{{media.description}}</span></a>
+                                            <p>{{media.name}}</p><a href="https://stayblissretreats.com" target="_blank"><span>{{media.description}}</span></a>
                                             <p></p>
                                         </div>
                                     </div>
