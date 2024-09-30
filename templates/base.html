@@ -18,9 +18,9 @@
             <div class="jssor-carousel-wrapper jssor-home-wrapper aspectratio16-9">
                 <div class="jssor-carousel" data-jssortransition="Fade" data-slideinterval="60000" id="homeCarousel">
                     <div class="sliders-jssor" data-u="slides">
-                        <div class="item"><img class="img-responsive" data-aspectratio="16-9" data-src2="https://stayblissimages.s3.amazonaws.com/media/first_main.jpeg"
+                        {% comment %} <div class="item"><img class="img-responsive" data-aspectratio="16-9" data-src2="https://stayblissimages.s3.amazonaws.com/media/first_main.jpeg"
                                 data-u="image" height="768" src="https://stayblissimages.s3.amazonaws.com/media/first_main.jpeg" style="aspect-ratio: 1920/1080; "
-                                width="1366" /></div>
+                                width="1366" /></div> {% endcomment %}
                         {% for property in properties %} 
                         <div class="item">
                             <img class="img-responsive" data-aspectratio="16-9" data-src2="{{property.image.url}}" data-u="image" height="768" loading="lazy" width="1366" />
