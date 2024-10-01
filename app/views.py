@@ -23,7 +23,11 @@ def GALLERY(requests):
 
 
 def ABOUT(requests):
-    return render(requests,'about.html')
+    about = models.aboutpage.objects.all()
+    data = {
+        'about': about,
+    }
+    return render(requests,'about.html',data)
 
 
 def PACKAGES(requests):

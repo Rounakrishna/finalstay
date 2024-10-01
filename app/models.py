@@ -17,15 +17,12 @@ class newsmedia(models.Model):
 
     def __str__(self):
         return self.name
-
-    
+ 
 class ourcommunity(models.Model):
     name = models.CharField(max_length=100)
     image = models.ImageField(upload_to='ourcommunity')
     def __str__(self):
         return self.name
-  
-
     
 class exploreproperties(models.Model):
     name = models.CharField(max_length=100)
@@ -35,15 +32,12 @@ class exploreproperties(models.Model):
     def __str__(self):
         return self.name
     
-
 class unexplore(models.Model):
     name = models.CharField(max_length=100)
     image = models.ImageField(upload_to='unexplore')
 
     def __str__(self):
         return self.name
-
-
 
 class gallery(models.Model):
     name = models.CharField(max_length=100)
@@ -53,8 +47,6 @@ class gallery(models.Model):
     def __str__(self):
         return self.name
 
-
-
 class package(models.Model):
     name = models.CharField(max_length=100)
     location = models.CharField(max_length=100)
@@ -63,7 +55,6 @@ class package(models.Model):
     def __str__(self):
         return self.name
 
-
 class carrier(models.Model):
     job_name = models.CharField(max_length=100)
     location = models.CharField(max_length=100)
@@ -71,13 +62,21 @@ class carrier(models.Model):
     def __str__(self):
         return self.job_name
 
-
 class testimonial(models.Model):
     name = models.CharField(max_length=100)
     description = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
+
+
+
     
+class aboutpage(models.Model):
+    name = models.CharField(max_length=100)
+    image = models.ImageField(upload_to='aboutpagephoto')
+    description = models.CharField(max_length=100)
 
-
+    def __str__(self):
+        return self.name
+    
